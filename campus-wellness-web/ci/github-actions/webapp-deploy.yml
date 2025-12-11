@@ -1,0 +1,11 @@
+# GitHub Actions workflow for webapp deployment
+name: Webapp Deploy
+on:
+  push:
+    branches: [main]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Add build and deploy steps here
