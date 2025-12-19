@@ -1,0 +1,358 @@
+.app-shell {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0d1b3a 0%, #1a2a4a 30%, #0a3a4a 70%, #1a4a3a 100%);
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ==========================================
+   NAVBAR STYLES
+   ========================================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: rgba(11, 27, 58, 0.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.brand-icon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-btn {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.nav-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sos-btn {
+  background: linear-gradient(135deg, #ff4757 0%, #ff6b7a 100%);
+  color: white;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+}
+
+.sos-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 71, 87, 0.4);
+}
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+
+.hero-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.hero-content {
+  margin-bottom: 4rem;
+}
+
+.hero-label {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* ==========================================
+   FEATURE CARDS GRID
+   ========================================== */
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+.feature-card {
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 220px;
+  font-weight: 600;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.feature-card p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Individual card colors */
+.sos-card {
+  background: linear-gradient(135deg, #ff4757 0%, #ff6b7a 100%);
+  box-shadow: 0 8px 32px rgba(255, 71, 87, 0.3);
+}
+
+.sos-card:hover {
+  box-shadow: 0 12px 48px rgba(255, 71, 87, 0.4);
+}
+
+.mood-card {
+  background: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);
+  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
+}
+
+.mood-card:hover {
+  box-shadow: 0 12px 48px rgba(168, 85, 247, 0.4);
+}
+
+.journal-card {
+  background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+  box-shadow: 0 8px 32px rgba(8, 145, 178, 0.3);
+}
+
+.journal-card:hover {
+  box-shadow: 0 12px 48px rgba(8, 145, 178, 0.4);
+}
+
+.chat-card {
+  background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.3);
+}
+
+.chat-card:hover {
+  box-shadow: 0 12px 48px rgba(16, 185, 129, 0.4);
+}
+
+/* ==========================================
+   BREATHING EXERCISES BANNER
+   ========================================== */
+
+.breathing-banner {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(245, 158, 11, 0.3);
+  margin: 2rem auto;
+}
+
+.breathing-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.breathing-icon {
+  font-size: 2.5rem;
+  opacity: 0.9;
+}
+
+.breathing-text h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.breathing-text p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+}
+
+.start-btn {
+  background: #ffffff;
+  color: #f59e0b;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 1024px) {
+  .feature-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .nav-brand {
+    gap: 0.8rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .feature-cards {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .breathing-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .feature-cards {
+    gap: 1rem;
+  }
+
+  .breathing-banner {
+    padding: 1.5rem;
+  }
+
+  .breathing-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .start-btn {
+    width: 100%;
+  }
+}
